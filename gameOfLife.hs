@@ -13,3 +13,6 @@ main = do
 makeBoard :: Int -> Int -> [Int] -> [[Int]]
 makeBoard 1 n xs = [xs]
 makeBoard z n xs = (take n xs) : makeBoard (z-1) n (drop n xs)
+
+step :: [Int] -> [Int]
+
